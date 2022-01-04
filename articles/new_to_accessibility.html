@@ -1,0 +1,145 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New to Web Accessibility? Start Here!</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="../breakpoints.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mqt2sks.css">
+    <script src="https://kit.fontawesome.com/fc31c4e11d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="navBarLogo"><a href="../index.html"><img src="../img/logo_2.svg" alt="basica11y logo" width="50%"></a></div>
+       <div class="navBarItem">
+        <ul>
+            <li class="mainNav"><a href="../about.html">About</a></li>
+            <li class="mainNav"><a href="../guides.html">Guides</a></li>
+            <li class="mainNav"><a href="../community.html">Community</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <nav class='navigation'>
+        <div id="menuToggle">
+       
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+        
+          <ul id="menu">
+            <li class="mainNav"><a href="../about.html">About</a></li>
+            <li class="mainNav"><a href="../guides.html">Guides</a></li>
+            <li class="mainNav"><a href="../community.html">Community</a></li>
+           
+          </ul>
+        </div>
+      </nav>
+    <main>
+        <!-- <div class="sideBarNav">
+            <h2>In this Article</h2>
+            <ul>
+                <li><a href="../about.html">What is Accessible Web Design?</a></li>
+                <li><a href="#">What is Inclusive Web Design?</a></li>
+                <li><a href="#">More Resources</a></li>
+            </ul>
+        </div> -->
+        <div class="articleText">
+            <img class="header" src="../img/start.png" alt="location pin with exlamation point">
+            <h1>New to Web Accessibility? Start Here!</h1>
+
+            <p class="intro">If you are new to accessible web design you’ve most likely come across the W3C website. The W3C stands for the Word Wide Web Consortium ( a mouthful, I know), and they decide the proper conventions for HTML and CSS. They provide useful information, but it can be hard to digest. Here are somethings you should know to get started.</p>
+
+            <h2>Use the Right HTML Tags</h2>
+
+            <p>Each element on a page has its own HTML tags. Web designers need to be mindful of the hierarchy of information because it directly affects how assistive technologies work with the HTML. Propper use of HTML formatting allows content to be correctly read aloud, enlarged, or adapted to meet the needs of different people.</p>
+
+            <div class="code">
+                <h3> &lt;h1&gt; Important info to be read first  &lt;h1&gt; </h3>
+                <h3> &lt;h2&gt; Secondary headers  &lt;h2&gt; </h3>
+                <h3> &lt;p&gt; Body text &lt;p&gt; </h3>
+                <h3> &lt;button&gt; This should be self-explanatory &lt;button&gt; </h3>
+                <h3> &lt;nav&gt; Your navigation bar goes in here  &lt;nav&gt; </h3>
+            
+                
+            </div>
+
+            <div id="inclusive"></div>
+            <h2>Style the Page With Intention</h2>
+
+            <p>Once you have the HTML set up, you will need to style your code to not look like a webpage from the 1990s. Make sure that color is not used as the only method of conveying information in your web designs. Not only can this be harmful to people with color blindness, but people have a harder time seeing color contrast as they age. You will also want to make sure that your text color has enough contrast against the background. There are many online tools to help with this. Text should be legible and scalable from any size, but try not to go below 12px. When possible, it is better to use the ‘em’ unit for type which makes the font size proportionate to the browser defaults. Other elements like buttons should be designed large enough to touch activated and need to be accessible by using the TAB key.</p>
+
+            <h2>You Need Supplemental Text for Non-text Content</h2>
+
+            <p>Images, buttons, charts and other user interface components are all elements that can prevent a person with a disability from using a website properly. These text alternatives typically come in two forms: alt tags and ARIA-labels. Alt tags are typically added to images like shown here:</p>
+            <div class="code">
+                <h3> &lt;img src="img/questionMark.svg" alt="help button"&gt; </h3>
+            </div>
+            <p>It is important to think more about what the purpose of the image you are describing and less about describing it literally as shown above. A screen reader will read aloud the tag to help users have a better understanding of what that element is. ARIA- labels are helpful for buttons and other toggles that the user will control by keyboard navigation or voice input. </p>
+
+            <h2>Use Straightforward UX Patterns</h2>
+
+            <p>People do not like being confused. Make sure you think about how information is arranged on the page from a logical perspective. It should be immediately clear to the user where they are on the website, and what the most important part(s) of the current webpage is. If the site has any type or menu or navigation, make sure the design and location are consistent throughout the site. All forms should be clearly labeled. You should make sure that your forms also have descriptive instructions, error messages and opportunities to review and correct a submission.</p>
+
+            <h4>Other Articles</h4>
+            <ul class="sources">
+                <li><a href="https://www.usability.gov/what-and-why/accessibility.html">Accessibility Basics</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility">Accessibilty from Mozilla</a></li>
+                <li><a href="https://webaim.org/intro/">Introduction to Web Accessibility by Webaim</a></li>
+            </ul>
+
+            <section>
+                <h4>Sources</h4>
+                <ul class="sources">
+                    <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/">Accessibility Principles by the W3C</a></li>
+                </ul>
+            </section>
+        </div>
+
+        
+
+       
+        
+    </main>
+
+    <footer>
+        <div class="socialMedia">
+        <div class="footerLogo">
+            <img src="../img/logo_white.svg" alt="digita11y logo" width="120%">
+        </div>
+            <p>Follow us on social!</p>
+            <ul class="socialList">
+                 <li class="social"><a class="socialLink" href="#"><i class="fab fa-instagram-square fa-2x" alt="follow our instagram"></i></a></li>
+                <li class="social"><a class="socialLink" href="#"><i class="fab fa-youtube-square fa-2x" alt="subsribe to our youtube channel"></i></a></li>
+                <li class="social"><a class="socialLink" href="#"><i class="fab fa-twitter-square fa-2x" alt="follow us on twitter"></i></a></li>
+            </span>
+            </ul>
+        </div>
+        <div class="siteMap">
+            <h3> Site Map</h3>
+            <ul>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../index.html">Home</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../about.html">About</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../guides.html">Guides</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../community.html">Community</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../outsideresources.html">Outside Resources</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../sitesources.html">Site Sources</a></li>
+            </ul>
+        </div>
+
+        <div class="thesisSite">
+        <h3>More About This Site</h3>
+        <p>This site is a Graphic Design Thesis project by Lily Champagne. The contents of this site is still in beta and is constantly updating. To learn more about me and this project head to the 
+           <a href="../sitesources.html"> site sources page. </a> </p> 
+        </div>
+        <div class="backToTop">
+            <h3>Back to Top</h3>
+            <a class="arrow" href="#"><i class="fas fa-caret-square-up fa-2x"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

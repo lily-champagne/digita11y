@@ -1,0 +1,153 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Here are the 5 Best Books about Inclsuive Design - digita11y</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="../breakpoints.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mqt2sks.css">
+    <script src="https://kit.fontawesome.com/fc31c4e11d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="navBarLogo"><a href="../index.html"><img src="../img/logo_2.svg" alt="basica11y logo" width="50%"></a></div>
+       <div class="navBarItem">
+        <ul>
+            <li class="mainNav"><a href="../about.html">About</a></li>
+            <li class="mainNav"><a href="../guides.html">Guides</a></li>
+            <li class="mainNav"><a href="../community.html">Community</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <nav class='navigation'>
+        <div id="menuToggle">
+       
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+        
+          <ul id="menu">
+            <li class="mainNav"><a href="../about.html">About</a></li>
+            <li class="mainNav"><a href="../guides.html">Guides</a></li>
+            <li class="mainNav"><a href="../community.html">Community</a></li>
+          </ul>
+        </div>
+      </nav>
+    <main>
+        <!-- <div class="sideBarNav">
+            <h2>In this Article</h2>
+            <ul>
+                <li><a href="../about.html">What is Accessible Web Design?</a></li>
+                <li><a href="#">What is Inclusive Web Design?</a></li>
+                <li><a href="#">More Resources</a></li>
+            </ul>
+        </div> -->
+        <div class="articleText">
+            <img class="header" src="../img/ariaa.png" alt="pink pencil writing on blue tag ">
+            <h1>ARIA attributes and How to Ase Them</h1>
+
+            <p class="intro">ARIA is an acronym for Accessible Rich Internet Applications. It is another tool for web designers to make content accessible for screen readers.</p>
+
+            <h2>Why use ARIA?</h2>
+            <p>ARIA attributes were created to help screen readers identify page elements that do not have conventional HTML tags. These are usually responsive page elements created with JavaScript such as widgets, hints and error messages, or live content updates. It is important to remember that you should always try to use HTML tags before ARIA because they override HTML semantics that add information as well as affect the behavior of screen readers.</p>
+
+            <h2>How to Use ARIA Attributes</h2>
+            <p>Let’s start with a button. In many cases, we can just use the &lt;button&gt; tag because we are creating a button for the purpose of one action like submitting a form.</p>
+
+            <div class="code">
+                <h3> &lt;button type= “submit” &gt; Submit Form &lt;/button &gt;</h3>
+            </div>
+
+            <p> But what if you wanted to create a button that toggles? The aria attribute “aria-pressed” gives an element a true or false state.</p>
+            <div class="code">
+                <h3>&lt;button type= “button” aria-pressed= “true”&gt; Opt in to emails &lt;/button&gt;</h3>
+            </div>
+
+            <p>The true or false state would not be communicated without the Attribute, but it is also important to remember the “ button type= “ so that the browser knows what the purpose of the button is. The user can toggle between the true and false states by using the mouse “enter” or “space” keys as well as touch screens.  This is how you would style it.</p>
+            <div class="code">
+                <h3>Button {</h3>
+                <h3 class="indent">color: white;</h3>
+                <h3 class="indent">background-color: #000;</h3>
+                <h3 class="indent">padding: 2px 5px;</h3>
+                <h3>}</h3>
+
+                <h3>[aria-pressed] {</h3>
+                    <h3 class="indent">position: relative;</h3>
+                    <h3 class="indent">	bottom: 3px;</h3>
+                    <h3 class="indent">right: 3px;</h3>
+                    <h3 class="indent">box-shadow: 2px 2px  0 #ffffff, 3px 3px #000;</h3>
+                <h3>}</h3>
+
+                <h3>[aria-pressed= ‘true’]  {</h3>
+                    <h3 class="indent">	box-shadow: inset 0 0 0 0 #000000, inset 3px 3px 0 #fff;</h3>
+                <h3>}</h3>
+            </div>
+
+            <img src="img/ariaButtons.png" alt="example of button when true and false">
+
+            <h2>Conclusion</h2>
+            <p>While you most likely will not be using ARIA attributes often (unless you are really into JavaScript), it is important to have them in your web design tool belt. Visual Studio Code has many ARIA attributes built into their EMMET functionality. If you want to learn all the technical aspects of ARIA, the W3C has a manual. If you want to learn more in a more approachable way, I recommend the book, Inclusive Components by Heydon Pickering.</p>
+
+
+           
+
+            <h4>Other Articles</h4>
+            <ul class="sources">
+                <li><a href="https://www.w3.org/TR/aria-in-html/">W3C Using ARIA</a></li>
+                <li><a href="https://inclusive-components.design/">Inclusive Components Blog</a></li>
+            </ul>
+
+            <section>
+                <h4>Sources</h4>
+                <ul class="sources">
+                    <li><a href="http://book.inclusive-components.design/">Inclusive Components, Heydon Pickering, 2018 </a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets">Mozilla Overview of Accessible Web Applications</a></li>
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="socialMedia">
+        <div class="footerLogo">
+            <img src="../img/logo_white.svg" alt="digita11y logo" width="120%">
+        </div>
+            <p>Follow us on social!</p>
+            <ul class="socialList">
+                 <li class="social"><a class="socialLink" href="#"><i class="fab fa-instagram-square fa-2x" alt="follow our instagram"></i></a></li>
+                <li class="social"><a class="socialLink" href="#"><i class="fab fa-youtube-square fa-2x" alt="subsribe to our youtube channel"></i></a></li>
+                <li class="social"><a class="socialLink" href="#"><i class="fab fa-twitter-square fa-2x" alt="follow us on twitter"></i></a></li>
+            </span>
+            </ul>
+        </div>
+        <div class="siteMap">
+            <h3> Site Map</h3>
+            <ul>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../index.html">Home</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../about.html">About</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../guides.html">Guides</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../community.html">Community</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../outsideresources.html">Outside Resources</a></li>
+                <li class="SiteMapItem"><a class="SiteMapLink" href="../sitesources.html">Site Sources</a></li>
+            </ul>
+        </div>
+
+        <div class="thesisSite">
+        <h3>More About This Site</h3>
+        <p>This site is a Graphic Design Thesis project by Lily Champagne. The contents of this site is still in beta and is constantly updating. To learn more about me and this project head to the 
+           <a href="../sitesources.html"> site sources page. </a> </p> 
+        </div>
+        <div class="backToTop">
+            <h3>Back to Top</h3>
+            <a class="arrow" href="#"><i class="fas fa-caret-square-up fa-2x"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

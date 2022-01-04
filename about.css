@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.header img {
+    width: 6%;
+}
+.aboutSections  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr;
+    gap: 10px 0px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+}
+
+.sectionHeaders {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10%;
+    padding-bottom: 25%;
+    justify-content: space-around
+}
+
+h2  {
+    font-size: 2em;
+    color: #0D8081 ;
+    margin-left: 10%;
+    
+}
+
+
+.sectionText    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+p  {
+    font-size: 1.25em;
+    line-height: 2em;
+    margin-right: 10%;
+}
+
+.pinkButton     {
+   margin-top: 10%;
+    margin-right: 50%;
+}
+
